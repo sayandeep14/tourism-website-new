@@ -1,0 +1,19 @@
+.testimonials-page {
+    padding: 4rem 2rem;
+    max-width: 800px;
+    margin: 100px auto 50px;
+    text-align: center;
+}
+
+.review-card {
+    background: #f3f3f3;
+    margin: 1.5rem 0;
+    padding: 1.5rem;
+    border-radius: 10px;
+}
+
+.review-author {
+    margin-top: 1rem;
+    font-weight: bold;
+    color: #0070f3;
+}

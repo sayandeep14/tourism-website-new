@@ -1,0 +1,28 @@
+.home-hero {
+    height: 100vh;
+    background-image: url('../../public/images/tour-banner.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-content {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 2rem;
+    color: white;
+    border-radius: 8px;
+}
+
+.hero-button {
+    margin-top: 1rem;
+    padding: 0.75rem 1.5rem;
+    background-color: #0070f3;
+    color: white;
+    border-radius: 5px;
+    display: inline-block;
+    text-decoration: none;
+    font-weight: bold;
+}

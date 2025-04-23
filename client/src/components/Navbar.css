@@ -1,0 +1,96 @@
+/* Navbar Container */
+.navbar {
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+/* Logo */
+.navbar-logo a {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #0070f3;
+    text-decoration: none;
+}
+
+/* Navigation Links */
+.navbar-links {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    position: relative;
+}
+
+.navbar-links li {
+    position: relative;
+}
+
+.navbar-links li>span {
+    font-weight: 500;
+    cursor: pointer;
+    color: #333;
+    padding: 0.5rem;
+}
+
+.navbar-links li:hover>span {
+    color: #0070f3;
+}
+
+/* Dropdown Menu */
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    margin-top: 0.1rem;
+    background-color: white;
+    border: 1px solid #eee;
+    border-radius: 5px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 0.5rem 0;
+    min-width: 160px;
+    z-index: 9999;
+}
+
+.dropdown-menu li {
+    padding: 0.5rem 1rem;
+    white-space: nowrap;
+}
+
+.dropdown-menu li:hover {
+    background-color: #f3f3f3;
+}
+
+.dropdown-menu li a {
+    color: #333;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-menu li a:hover {
+    color: #0070f3;
+}
+
+.logout-button {
+    background: none;
+    border: none;
+    color: #0070f3;
+    cursor: pointer;
+    font-weight: 500;
+    padding: 0.5rem;
+}
+
+.logout-button:hover {
+    text-decoration: underline;
+}
+
+/* KEEP dropdown open when hovering over parent */
+.navbar-links li:hover .dropdown-menu {
+    display: block;
+}

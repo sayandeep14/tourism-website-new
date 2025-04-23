@@ -1,0 +1,20 @@
+.terms-page {
+    padding: 4rem 2rem;
+    max-width: 800px;
+    margin: 100px auto 50px;
+}
+
+.terms-page ul {
+    margin: 1rem 0;
+    padding-left: 1rem;
+}
+
+.terms-page li {
+    margin-bottom: 0.5rem;
+}
+
+.updated {
+    font-size: 0.9rem;
+    color: #888;
+    margin-top: 1rem;
+}

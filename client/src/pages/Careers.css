@@ -1,0 +1,24 @@
+.careers-page {
+    padding: 4rem 2rem;
+    max-width: 800px;
+    margin: 100px auto 50px;
+}
+
+.career-card {
+    background-color: #fff;
+    border: 1px solid #eee;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    border-radius: 8px;
+}
+
+.career-card h3 {
+    color: #0070f3;
+    margin-bottom: 0.25rem;
+}
+
+.location {
+    font-size: 0.9rem;
+    color: #888;
+    margin-bottom: 0.75rem;
+}
