@@ -1,5 +1,6 @@
 const express = require("express");
 const cors = require("cors");
+const path = require("path")
 require("dotenv").config({ path: "./secrets.env" });
 const awsKey = process.env.AWS_ACCESS_KEY_ID;
 const awsSAKey = process.env.AWS_SECRET_ACCESS_KEY;
@@ -136,6 +137,11 @@ app.post("/api/login", async (req, res) => {
   );
 
   res.status(200).json({ token, name: user.name, email: user.email });
+});
+
+app.use(express.static(path.join(__dirname, "../client/build")));
+app.get("*", (req, res) => {
+  res.sendFile(path.join(__dirname, "../client/build/index.html"));
 });
 
 app.listen(PORT, () => {
